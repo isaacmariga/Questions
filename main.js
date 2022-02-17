@@ -1,18 +1,15 @@
 let text = document.querySelectorAll('.text')
 let close = document.querySelectorAll('.close')
 let test = document.querySelector(".test")
-let def = 0
 
 
-// let open = (x) => {
-//     close[x].addEventListener('click', e => {
-//         text[x].classList.toggle("text-visible")
-//             // let choice = close.get
-//     })
-// }
+let open = (x) => {
+    close[x].addEventListener('click', e => {
+        text[x].classList.toggle("text-visible")
+        console.log(text[x].idList)
+    })
+}
 
-// open(1)
-
-close[1].addEventListener('click', e => {
-    console.log(close.indexOf("click"))
-})
+open(0)
+open(1)
+open(2)
